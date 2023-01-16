@@ -1,34 +1,35 @@
-let database = [
-  
-];
-
-let data2=JSON.parse(localStorage.getItem('database'))
-
-const books = document.getElementById('bookCollection');
-
-
-for(let i=0;i<data2.length;i+=1){
-  books.innerHTML += `
-      <article class="book-card">
-          <p class="book-title">${data2[i].title}</p>
-          <p class="book-author">${data2[i].author}</p>
-          <button class="book-btn">Remove</button>
-          <hr>
-      </article>
-`
+const bookContainer = document.querySelector('.bookContainer');
+let books = JSON.parse(localStorage.getItem('books')) || [];
+books.forEach(book => {
+    bookContainer.innerHTML += `
+        <p>"${book.title}"</p>
+        <p>by ${book.author}</p>
+        <button class="removeBtn" id="${book.id}">Remove</button>
+        <hr>
+`;    
+});
+const addBook = () => {
+    let formData = document.querySelectorAll('input');
+    const title = formData[0].value;
+    const author = formData[1].value;
+    const id = Date.now().toString();
+    books.push({title, author, id});
+    localStorage.setItem('books', JSON.stringify(books));
 }
 
+document.querySelector('.addBtn').addEventListener('click', addBook);
 
-const addBooks = () => {
-  const form = document.querySelectorAll('input');
-  const title = form[0].value;
-  const author = form[1].value
-  database.push({ title, author })
-  localStorage.setItem('database',JSON.stringify(database))
-  console.log(data2)
-
-  location.reload()
- }
-
- const addBtn =document.getElementById('addBtn')
- addBtn.addEventListener('click',addBooks)
+const removeBook = (id) => {
+    let filteredBooks = books.filter((book) => book.id !== id);
+    localStorage.setItem('books', JSON.stringify(filteredBooks));
+    location.reload();
+}
+// document.querySelector('removeBtn').addEventListener('click', removeBook);
+bookContainer.addEventListener("click", (e) => {
+    const clickedBtn = e.target.closest(".removeBtn");
+    if (!clickedBtn) return;
+  
+    const idToRemove = clickedBtn.id;
+  
+    removeBook(idToRemove);
+  });

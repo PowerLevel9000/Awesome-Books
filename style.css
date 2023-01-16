@@ -3,17 +3,22 @@ body {
   margin: 0 auto;
 }
 
+hr {
+  margin-bottom: 20px;
+}
+
 form {
-  width: 60%;
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
+  width: 50%;
+  gap: 10px;
 }
 
 form input {
-  padding: 2px;
+  padding: 5px;
 }
 
-.btn {
-  width: 30%;
+button {
+  width: 100px;
+  padding: 3px;
 }
