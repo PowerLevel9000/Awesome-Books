@@ -13,7 +13,7 @@ const addBook = () => {
   const title = formData[0].value;
   const author = formData[1].value;
   const id = Date.now().toString();
-  books.push({title, author, id});
+  books.push({ title, author, id });
   localStorage.setItem('books', JSON.stringify(books));
 };
 
@@ -22,11 +22,10 @@ document.querySelector('.addBtn').addEventListener('click', addBook);
 const removeBook = (id) => {
   const filteredBooks = books.filter((book) => book.id !== id);
   localStorage.setItem('books', JSON.stringify(filteredBooks));
-  location.reload();
 };
 // document.querySelector('removeBtn').addEventListener('click', removeBook);
 bookContainer.addEventListener('click', (e) => {
-  const clickedBtn = e.target.closest(".removeBtn");
+  const clickedBtn = e.target.closest('.removeBtn');
   if (!clickedBtn) return;
   const idToRemove = clickedBtn.id;
 
