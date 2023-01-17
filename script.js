@@ -16,6 +16,7 @@ const addBook = () => {
   const id = Date.now().toString();
   books.push({ title, author, id });
   localStorage.setItem('books', JSON.stringify(books));
+  window.location.reload();
 };
 
 document.querySelector('.addBtn').addEventListener('click', addBook);
@@ -29,6 +30,5 @@ bookContainer.addEventListener('click', (e) => {
   const clickedBtn = e.target.closest('.removeBtn');
   if (!clickedBtn) return;
   const idToRemove = clickedBtn.id;
-
   removeBook(idToRemove);
 });
