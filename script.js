@@ -14,6 +14,12 @@ class BookShelf {
     localStorage.setItem('books', JSON.stringify(this.book));
     window.location.reload();
   };
+
+  removeBook = (id) => {
+    const filteredBooks = this.book.filter((b) => b.id !== id);
+    localStorage.setItem('books', JSON.stringify(filteredBooks));
+    window.location.reload();
+  };
 }
 const bookContainer = document.querySelector('.bookContainer');
 const g = new BookShelf();
@@ -25,5 +31,13 @@ g.book.forEach((b) => {
       </div>
     `;
 });
+
+bookContainer.addEventListener('click', (e) => {
+  const clickedBtn = e.target.closest('.removeBtn');
+  if (!clickedBtn) return;
+  const idToRemove = clickedBtn.id;
+  g.removeBook(idToRemove);
+});
+
 
 document.querySelector('.addBtn').addEventListener('click', g.addBook);
