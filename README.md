@@ -82,7 +82,7 @@
   </ul>
 </details>
 
-<details>
+<!-- <details> -->
 <!-- <summary>Animation</summary>
   <ul>
     <li><a href="https://michalsnik.github.io/aos/">Aos.js</a></li>
@@ -107,7 +107,7 @@
 
 > This link will guide you to my project
 
-- [Live Demo Link](https://powerlevel9000.github.io/Dynamic-Event-Template/)
+- [Live Demo Link](https://powerlevel9000.github.io/Awesome-Books/?)
 <!-- - [Loom Video](https://www.loom.com/share/263ca564cb634bcca4b48ad1ea9870b7) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -151,10 +151,9 @@ Clone this repository to your desired folder:
 
 ### Run tests
 
-- Check whether animation is good
-- check all the link on social icons are working or not 
-- also click on Adarsh in about page to mail me
-- also i want to add call me button give suggestion 
+- Check whether your fav book added 
+- Check your mood swings works 🧑‍🏫😁 according to my project
+ 
 
 ### Deployment
 
@@ -175,9 +174,9 @@ You can deploy this project using:
 - Twitter: [@PowerLevel9002](https://twitter.com/PowerLevel9002?t=AIuSN7mTxk5a_MWpLolEjA&s=09)
 - LinkedIn: [@Adarsh Pathak](https://www.linkedin.com/in/adarsh-pathak-56a831256/)
 
-<!-- 👤 **Rubén D. Pire**
+👤 ****
 
-- GitHub: [@rpire](https://github.com/rpire) -->
+- GitHub: [@DilsherB](https://github.com/DilsherB)
 
 
 <!-- FUTURE FEATURES -->
@@ -186,9 +185,9 @@ You can deploy this project using:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **Add more Pages**
-- [ ] **Dynamic everything so that it can be switchable for many websites**
-- [ ] **Registration Form**
+- [ ] **Add navigation bar**
+- [ ] **improve functionality**
+- [ ] **improve styling**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -214,11 +213,10 @@ If you like my Project give it a Star ✨🌟
 
 <!-- ACKNOWLEDGEMENTS -->
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
+<!-- ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-This project design is reflection of Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- FAQ (optional) -->
 
