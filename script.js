@@ -39,5 +39,4 @@ bookContainer.addEventListener('click', (e) => {
   g.removeBook(idToRemove);
 });
 
-
 document.querySelector('.addBtn').addEventListener('click', g.addBook);
