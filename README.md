@@ -177,6 +177,8 @@ You can deploy this project using:
 👤 **Dilsher Balouch**
 
 - GitHub: [@DilsherB](https://github.com/DilsherB)
+- Twitter: [@_brilliantMindz](https://twitter.com/_brilliantMindz)
+- LinkedIn: [@_brilliantMindz](https://www.linkedin.com/in/brilliantmindz/)
 
 
 <!-- FUTURE FEATURES -->
