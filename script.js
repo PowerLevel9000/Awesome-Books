@@ -1,4 +1,3 @@
-const bookContainer = document.querySelector('.bookContainer');
 class BookShelf {
   constructor() {
     this.book = JSON.parse(localStorage.getItem('books')) || [];
@@ -11,14 +10,13 @@ class BookShelf {
     if (title.trim() === '' || author.trim() === '') return;
     const id = Date.now().toString();
     this.book.push({ title, author, id });
-    console.log(this.book)
+
     localStorage.setItem('books', JSON.stringify(this.book));
     window.location.reload();
   };
-
-
 }
-const g = new BookShelf()
+const bookContainer = document.querySelector('.bookContainer');
+const g = new BookShelf();
 g.book.forEach((b) => {
   bookContainer.innerHTML += `
       <div class="innerContainer">
@@ -28,7 +26,4 @@ g.book.forEach((b) => {
     `;
 });
 
-
 document.querySelector('.addBtn').addEventListener('click', g.addBook);
-console.log(g.book)
-
