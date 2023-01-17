@@ -2,12 +2,13 @@ const bookContainer = document.querySelector('.bookContainer');
 const books = JSON.parse(localStorage.getItem('books')) || [];
 books.forEach((book) => {
   bookContainer.innerHTML += `
-  <p>"${book.title}"</p>
-  <p>by ${book.author}</p>
-  <button class="removeBtn" id="${book.id}">Remove</button>
-  <hr>
+  <div class="innerContainer">
+    <p>"${book.title}" by ${book.author}</p>
+    <button class="removeBtn" id="${book.id}">Remove</button>
+  </div>
 `;
 });
+
 const addBook = () => {
   const formData = document.querySelectorAll('input');
   const title = formData[0].value;
