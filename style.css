@@ -1,0 +1,24 @@
+body {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+hr {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 10px;
+}
+
+form input {
+  padding: 5px;
+}
+
+button {
+  width: 100px;
+  padding: 3px;
+}
