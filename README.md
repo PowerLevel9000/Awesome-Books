@@ -174,7 +174,7 @@ You can deploy this project using:
 - Twitter: [@PowerLevel9002](https://twitter.com/PowerLevel9002?t=AIuSN7mTxk5a_MWpLolEjA&s=09)
 - LinkedIn: [@Adarsh Pathak](https://www.linkedin.com/in/adarsh-pathak-56a831256/)
 
-👤 ****
+👤 **Dilsher Balouch**
 
 - GitHub: [@DilsherB](https://github.com/DilsherB)
 
