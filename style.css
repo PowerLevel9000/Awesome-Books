@@ -133,6 +133,10 @@ footer,
   background-color: rgb(231, 227, 227);
 }
 
+li {
+  cursor: pointer;
+}
+
 nav,
 footer {
   position: relative;
@@ -140,13 +144,12 @@ footer {
 }
 
 footer {
-  margin-top: 20px;
+  margin: 20px 0 5px 0;
 }
 
 .hidden {
   display: none;
 }
-
 
 @media screen and (max-width:768px) {
   .invisible {
