@@ -1,6 +1,28 @@
 body {
-  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  width: 50%;
+  max-width: 400px;
   margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.rotate {
+  transform: rotate(90deg);
+  width: 55px;
 }
 
 h1,
@@ -18,7 +40,6 @@ hr {
 form {
   display: flex;
   flex-direction: column;
-  width: 50%;
   gap: 10px;
   margin: 0 auto;
 }
@@ -37,6 +58,8 @@ form div {
   text-align: right;
 }
 
+nav,
+footer,
 .bookContainer {
   border: 2px outset rgb(95, 93, 93);
   border-radius: 5px;
@@ -51,4 +74,9 @@ form div {
 
 .innerContainer:nth-child(odd) {
   background-color: rgb(231, 227, 227);
+}
+
+nav,
+footer {
+  padding: 0 10px;
 }
