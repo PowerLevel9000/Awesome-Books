@@ -56,11 +56,8 @@ body {
   stroke-dashoffset: -138px;
 }
 
-
-
 main {
   width: 50%;
-  height: fit-content;
   min-height: calc(100vh - 140px);
   max-width: 400px;
   margin: 0 auto;
@@ -151,9 +148,9 @@ footer {
   display: none;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .invisible {
-  display: none;
+    display: none;
   }
 
   .burger-container {
