@@ -1,10 +1,67 @@
 body {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
+
+.burger-container {
+  display: none;
+  position: fixed;
+  font-size: 30px;
+  transition: 0.2s;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.5s;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+
+.line {
+  fill: none;
+  transition: stroke-dasharray 0.5s, stroke-dashoffset 0.5s;
+  stroke: #000;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
+}
+
+
 
 main {
   width: 50%;
+  height: fit-content;
+  min-height: calc(100vh - 140px);
   max-width: 400px;
   margin: 0 auto;
 }
@@ -12,6 +69,7 @@ main {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
@@ -77,5 +135,41 @@ footer,
 
 nav,
 footer {
+  position: relative;
   padding: 0 10px;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+@media screen and (max-width:768px) {
+  .invisible {
+  display: none;
+  }
+
+  .burger-container {
+    display: unset;
+  }
+
+  nav {
+    flex-direction: column;
+    background-color: rgb(239, 232, 232);
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 2;
+    margin: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
