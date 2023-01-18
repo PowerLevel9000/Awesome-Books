@@ -7,11 +7,11 @@
   <h1><b>Awesome Books</b><br><br></h1>
   
  </div>
-<!--<h2>Main Page <b>Desktop View<b><br><br></h2>
+<!-- <h2>Main Page <b>Desktop View<b><br><br></h2> -->
 <div align="center">
   <img src="./media/Awesome-book-initial.png" alt="logo" width="100%"  height="auto" />
 </div>
-<h2>About Page <b>Desktop View<b><br><br></h2>
+<!-- <h2>About Page <b>Desktop View<b><br><br></h2>
 <div align="center">
   <img src="./media/about-desktop-page.png" alt="logo" width="100%"  height="auto" />
 </div>
@@ -199,7 +199,7 @@ You can deploy this project using:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/PowerLevel9000/Awesome-Books/issues)).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

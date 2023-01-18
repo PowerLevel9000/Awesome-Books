@@ -3,8 +3,16 @@ body {
   margin: 0 auto;
 }
 
+h1,
+h2 {
+  text-align: center;
+}
+
 hr {
-  margin-bottom: 20px;
+  width: 80px;
+  align-items: center;
+  height: 2px;
+  background-color: black;
 }
 
 form {
@@ -12,6 +20,7 @@ form {
   flex-direction: column;
   width: 50%;
   gap: 10px;
+  margin: 0 auto;
 }
 
 form input {
@@ -21,4 +30,24 @@ form input {
 button {
   width: 100px;
   padding: 3px;
+}
+
+form div {
+  text-align: right;
+}
+
+.bookContainer {
+  border: 2px outset rgb(95, 93, 93);
+  border-radius: 5px;
+}
+
+.innerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 5px;
+}
+
+.innerContainer:nth-child(odd) {
+  background-color: rgb(231, 227, 227);
 }
