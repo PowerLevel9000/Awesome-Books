@@ -107,7 +107,7 @@
 
 > This link will guide you to my project
 
-- [Live Demo Link](https://dilsherb.github.io/my-awesome-Books/)
+- [Live Demo Link](https://powerlevel9000.github.io/Awesome-Books/dist/)
 <!-- - [Loom Video](https://www.loom.com/share/263ca564cb634bcca4b48ad1ea9870b7) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
