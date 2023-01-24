@@ -1,6 +1,6 @@
 const menuItems = document.querySelectorAll('li');
 const sections = document.querySelectorAll('section');
-function reset() {
+const reset=()=> {
   sections.forEach((section) => {
     section.style.display = 'none';
   });
@@ -27,7 +27,7 @@ const menuBtn = document.getElementById('burger-container');
 const navOverlay = document.getElementById('nav');
 const navList = document.getElementsByClassName('menu')[0];
 const burgerBar = document.getElementsByClassName('hamRotate')[0];
-function overlay() {
+const overlay=()=> {
   navOverlay.classList.toggle('invisible');
   burgerBar.classList.toggle('active');
   navOverlay.style.animation = 'awesome-out 1s';
