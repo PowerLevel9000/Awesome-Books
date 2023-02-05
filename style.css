@@ -59,7 +59,7 @@ body {
 main {
   width: 50%;
   min-height: calc(100vh - 187px);
-  max-width: 400px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
