@@ -7,27 +7,16 @@
   <h1><b>Awesome Books</b><br><br></h1>
   
  </div>
-<!-- <h2>Main Page <b>Desktop View<b><br><br></h2> -->
 <div align="center">
-  <img src="./media/Awesome-book-initial.png" alt="logo" width="100%"  height="auto" />
+  <img src="./all-devices-black.png" alt="logo" width="100%"  height="auto" />
 </div>
-<!-- <h2>About Page <b>Desktop View<b><br><br></h2>
-<div align="center">
-  <img src="./media/about-desktop-page.png" alt="logo" width="100%"  height="auto" />
-</div>
-
-<div>
-  <h2>About Page <b>Mobile View<b><br><br></h2>
-  <img src="./media/mobile-page.png" alt="logo"  />
-  <h2>About Page <b>Mobile View<b><br><br></h2>
-  <img src="./media/about-mobile-page.png" alt="logo"  />
-</div> -->
 
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
+  - [🧪 Linters And Deployment](#linters)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
@@ -44,22 +33,24 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ ](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 Awesome Books <a name="about-project"></a>
 
-> This Project for individual purpose it organize someone's fav books
+This Project for individual purpose and it organize your fav books
 
 **Awesome Books** is just a javascript based simple project
+
+## 🧪 Linters And Deployment <a name="linters"></a>
+[![Linters](https://github.com/PowerLevel9000/Awesome-Books/actions/workflows/linters.yml/badge.svg)](https://github.com/PowerLevel9000/Awesome-Books/actions/workflows/linters.yml)[![pages-build-deployment](https://github.com/PowerLevel9000/Awesome-Books/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/PowerLevel9000/Awesome-Books/actions/workflows/pages/pages-build-deployment)
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> In this project I used many skills, tech and libraries
+In this project we used many skills, tech and libraries
 
 <details>
   <summary>Documentation</summary>
@@ -78,18 +69,9 @@
 <details>
 <summary>Dynamics And Logics</summary>
   <ul>
-    <li><a href="https://michalsnik.github.io/aos/">JavaScript</a></li>
+    <li><a href="https://www.javascript.com/">JavaScript</a></li>
   </ul>
 </details>
-
-<!-- <details> -->
-<!-- <summary>Animation</summary>
-  <ul>
-    <li><a href="https://michalsnik.github.io/aos/">Aos.js</a></li>
-  </ul>
-</details> -->
-
-<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
@@ -108,17 +90,15 @@
 > This link will guide you to my project
 
 - [Live Demo Link](https://powerlevel9000.github.io/Awesome-Books/dist/)
-<!-- - [Loom Video](https://www.loom.com/share/263ca564cb634bcca4b48ad1ea9870b7) -->
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
-
 ## 💻 Getting Started <a name="getting-started"></a>
 
->For having local file and project you can fork this repo 
-
->And for making changes you you should follow prerequisites
+For having local file and project you can fork this repo or clone it using `git clone https://github.com/PowerLevel9000/Awesome-Books.git`
+And for making changes you you should follow prerequisites
 
 
 ### Prerequisites
@@ -127,26 +107,39 @@ In order to edit this project you need:
 
  - Any text editor such as note pad and word pad
  - A web browser
+ - Node js installed
+ - An IDE
 
-#### suggested 
- - visual studio code
- - atom 
- - visual code 
+#### Suggested IDE
+ - Visual studio code `I prefer this one 🙃🙃`
+ - Atom 
+ - Sublime 
+ - IntelliJ IDEA
+ - Visual code 
 
 ### Setup
 
 Clone this repository to your desired folder:
 
- - click on index.html
- - open in the browser
+- Open your terminal there (bash cmd powershell run etc...) and run `npm i` to install node modules
+- `npm run dev` or `npm run start` this will open project in browser
+- If you to edit something edit in src dir and then run in terminal `npm run build` to build it for production
 
+- Before deployment have some linter check 
+  - [ ] `npx stylelint "**/*.{css,scss}"` for css and saas file
+  - [ ] `npx eslint .` for js files
+  - [ ] `npx hint .` for html files 
 
+- After fixing error build deploy for production
+
+### Install 
+```
+npm i 
+```
 ### Usage
 
- Execute the following thing:
- 
- - See project buttons
- - Navigation bar on desktop version
+  - Navigation bar using SPA
+  - Book added to shelf
 
 
 ### Run tests
@@ -185,8 +178,6 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
 - [ ] **Add navigation bar**
 - [ ] **improve functionality**
 - [ ] **improve styling**
@@ -215,26 +206,14 @@ If you like my Project give it a Star ✨🌟
 
 <!-- ACKNOWLEDGEMENTS -->
 
-<!-- ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I want to thank Microverse for giving me opportunity to show my skills
+<p align="right">(<a href="#readme-top">back to top</a>)</p> 
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
-<!-- FAQ (optional) -->
 
-## ❓ FAQ <a name="faq"></a>
-
-> ask questions to be here 
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
@@ -242,6 +221,5 @@ If you like my Project give it a Star ✨🌟
 
 This project is [MIT](https://github.com/PowerLevel9000/Awesome-Books/blob/master/MIT.md) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
